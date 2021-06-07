@@ -8,19 +8,31 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input'
+import { FormsModule } from '@angular/forms';
+import {MatSidenavModule} from '@angular/material/sidenav'
+import {MatSliderModule} from '@angular/material/slider';
+import { SnapoverComponent } from './snapover/snapover.component';
+import {MatSelectModule} from '@angular/material/select';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FooterComponent,
-    AppointmentComponent
+    SnapoverComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSelectModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

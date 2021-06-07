@@ -1,3 +1,4 @@
+import { stringify } from '@angular/compiler/src/util';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'proj';
+  name!: string;
+  showFiller: boolean = false;
+
+  changeName()
+   {
+     this.name;
+   }
+
+ constructor(){
+  
+ }
 }
