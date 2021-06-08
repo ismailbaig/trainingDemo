@@ -13,6 +13,11 @@ import {MatSidenavModule} from '@angular/material/sidenav'
 import {MatSliderModule} from '@angular/material/slider';
 import { SnapoverComponent } from './snapover/snapover.component';
 import {MatSelectModule} from '@angular/material/select';
+import {MatButtonModule} from '@angular/material/button';
+import { ProjectComponent } from 'src/project/project.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 
@@ -21,7 +26,9 @@ import {MatSelectModule} from '@angular/material/select';
     AppComponent,
     HomeComponent,
     FooterComponent,
-    SnapoverComponent
+    SnapoverComponent,
+    ProjectComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -31,7 +38,11 @@ import {MatSelectModule} from '@angular/material/select';
     MatInputModule,
     MatSidenavModule,
     MatSliderModule,
-    MatSelectModule
+    MatSelectModule,
+    MatButtonModule,
+    MatIconModule,
+    MatMenuModule,
+    MatToolbarModule
     
   ],
   providers: [],

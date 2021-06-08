@@ -1,8 +1,11 @@
 .example-container {
-    width: 400px;
-    height: 200px;
+    width: 1500px;
+    height: 500px;
     margin: 12px;
-    border: 1px solid #555;
+    border: 10px solid #555;
+    background-color:lightblue;
+    
+    
   }
   
   mat-drawer-content {
@@ -10,5 +13,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+  }
+  mat-drawer{
+    background-color: chocolate;
   }
   

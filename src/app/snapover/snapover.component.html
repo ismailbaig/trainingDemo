@@ -1,5 +1,57 @@
 <mat-drawer-container class="example-container" [hasBackdrop]="hasBackdrop.value">
-    <mat-drawer #drawer [mode]="mode.value">I'm a drawer</mat-drawer>
+    <mat-drawer #drawer [mode]="mode.value">
+
+        <button mat-menu-item>
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>emergency</mat-icon>
+          <span>Emergency</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>contacts</mat-icon>
+          <span>Contacts</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>search</mat-icon>
+            <span>Search</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>dashboard</mat-icon>
+            <span>Dashboard</span>
+          </button>
+      
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>home</mat-icon>
+    <span>Home</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>emergency</mat-icon>
+    <span>Emergency</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>contacts</mat-icon>
+    <span>Contacts</span>
+  </button>
+  <button mat-menu-item>
+      <mat-icon>search</mat-icon>
+      <span>Search</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>dashboard</mat-icon>
+      <span>Dashboard</span>
+    </button>
+</mat-menu>
+  
+
+  
+  
+    </mat-drawer>
     <mat-drawer-content>
       <mat-form-field>
         <mat-label>Sidenav mode</mat-label>
